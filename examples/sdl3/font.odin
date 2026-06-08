@@ -3,7 +3,7 @@ package main
 import "core:strings"
 import "vendor:sdl3"
 import ttf "vendor:sdl3/ttf"
-import ollay "../.."
+import ollay "../../src"
 
 load_font :: proc(path: string, size: f32) -> ollay.Font {
     if !ttf.Init() { panic(string(sdl3.GetError())) }
